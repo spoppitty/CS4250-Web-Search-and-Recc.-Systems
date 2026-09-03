@@ -40,14 +40,6 @@ for i, row in data.iterrows():
     # Tokenizing the document
     tokens = text.split()
 
-    # remove common stop words
-    filteredTokens = []
-    for token in tokens:
-        if token != "in":
-            filteredTokens.append(token)
-    
-    tokens = filteredTokens
-
     # Applying lemmatization
     normalizedTokens = []
     for token in tokens:
